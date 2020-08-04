@@ -20,7 +20,7 @@ def migrate():
 
     # import some default intents
     from app.intents.controllers import import_json
-    json_file = open("examples/default_intents.json", "r+")
+    json_file = open("examples/people.json", "r+")
     stories = import_json(json_file)
     print("Imported {} Stories".format(len(stories)))
 
